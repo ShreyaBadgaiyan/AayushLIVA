@@ -1,3 +1,4 @@
+import 'package:ayurscan/utils/routes.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
@@ -62,9 +63,12 @@ class _LoginPageState extends State<LoginPage> {
                   ),
 
                   ElevatedButton(
-                      onPressed:(){},
+                      onPressed:(){
+                        Navigator.pushNamed(context, MyRoutes.homeRoute);
+                      },
                       child:Text("Login"),
-                  style: TextButton.styleFrom(),)
+                  style: TextButton.styleFrom(
+                      minimumSize:Size(120,40)),)
                 ],
               ),
             )

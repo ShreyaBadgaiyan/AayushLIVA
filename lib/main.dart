@@ -1,5 +1,6 @@
 import 'package:ayurscan/auth/loginPage.dart';
 import 'package:ayurscan/screens/home_page.dart';
+import 'package:ayurscan/utils/routes.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +17,10 @@ class MyApp extends StatelessWidget {
     primarySwatch:Colors.green,
     ),
     routes:{
-    "/":(context)=>LoginPage(),}
+    "/":(context)=>LoginPage(),
+      MyRoutes.homeRoute:(context)=>HomePage(),
+      MyRoutes.loginRoute:(context)=>LoginPage(),
+    }
     );
   }
 }
